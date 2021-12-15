@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Accounts\" />
+    <None Remove="Amazon.AspNetCore.Identity.Cognito" />
+    <None Remove="Amazon.Extensions.CognitoAuthentication" />
+    <None Remove="Models\Accounts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Accounts\" />
+    <Folder Include="Models\Accounts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Amazon.AspNetCore.Identity.Cognito" Version="3.0.0" />
+    <PackageReference Include="Amazon.Extensions.CognitoAuthentication" Version="2.2.2" />
+  </ItemGroup>
+</Project>
